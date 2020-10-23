@@ -22,9 +22,12 @@ class MyApp extends StatelessWidget {
       //Title is the name of the app itself, here we simply use a string as a value
       title: 'Flutter Demo',
 
+      //This command hides the red banner at the top rigth corner
+      debugShowCheckedModeBanner: false,
+
       //Theme indicates which color themes and other display configuration to use and in this case we use a widget
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.cyan,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
 
@@ -86,11 +89,11 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             //Here we simply display a text
             Text(
-              'S2AM - Nikita Chechel',
+              "S2AM - Nikita Chechel",
             ),
             //And here we display the value of the counter variable
             Text(
-              '$_counter',
+              "$_counter",
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
